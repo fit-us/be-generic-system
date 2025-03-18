@@ -1,4 +1,4 @@
-module fitus-file-upload-service
+module github.com/fit-us/be-generic-system
 
 go 1.23.0
 
