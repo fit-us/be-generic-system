@@ -24,6 +24,10 @@ jobs:
                   project_id: ${{ secrets.GCP_PROJECT_ID }}
                   export_default_credentials: true
 
+            - name: Enable Cloud Resource Manager API
+              run: |
+                  gcloud services enable cloudresourcemanager.googleapis.com
+
             - name: Deploy to Google Cloud Functions
               working-directory: file-upload
               run: |
