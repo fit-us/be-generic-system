@@ -23,7 +23,6 @@ jobs:
             - name: Deploy to Google Cloud Functions
               working-directory: file-upload
               run: |
-                  cd file-upload
                   gcloud functions deploy HelloWorld \
                     --entry-point HelloWorld \
                     --runtime go116 \
