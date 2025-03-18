@@ -1,6 +1,6 @@
 module github.com/fit-us/be-generic-system
 
-go 1.23.0
+go 1.23
 
 require (
 	cel.dev/expr v0.19.2 // indirect
