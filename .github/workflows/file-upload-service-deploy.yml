@@ -27,6 +27,9 @@ jobs:
             - name: Enable Cloud Resource Manager API
               run: |
                   gcloud services enable cloudresourcemanager.googleapis.com
+            - name: Enable Cloud Run API
+              run: |
+                  gcloud services enable run.googleapis.com
 
             - name: Deploy to Google Cloud Functions
               working-directory: file-upload
