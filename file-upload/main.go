@@ -9,7 +9,6 @@ import (
 	"time"
 
 	"cloud.google.com/go/storage"
-	"google.golang.org/api/option"
 )
 type Hello struct{
 	Message string `json:"message"`
@@ -45,7 +44,7 @@ func HelloWorld(w http.ResponseWriter, r *http.Request) {
 	// GCS 클라이언트 생성
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*50)
 	defer cancel()
-	client, err := storage.NewClient(ctx, option.WithCredentialsFile("fitus-file-bucket.json"))
+	client, err := storage.NewClient(ctx)
 	if err != nil {
 		http.Error(w, "Error creating storage client", http.StatusInternalServerError)
 		return
