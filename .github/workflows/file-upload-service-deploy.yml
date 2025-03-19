@@ -22,7 +22,6 @@ jobs:
               uses: google-github-actions/setup-gcloud@v2
               with:
                   project_id: ${{ secrets.GCP_PROJECT_ID }}
-                  export_default_credentials: true
 
             - name: Enable Cloud Resource Manager API
               run: |
@@ -43,4 +42,5 @@ jobs:
                     --runtime go123 \
                     --trigger-http \
                     --allow-unauthenticated \
-                    --gen2
+                    --gen2 \
+                    --region=asia-northeast3
