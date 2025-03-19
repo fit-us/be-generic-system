@@ -23,5 +23,6 @@
 
 # Go workspace file
 go.work
+file-upload/fitus-file-bucket.json
 
 # End of https://www.toptal.com/developers/gitignore/api/go
