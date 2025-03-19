@@ -38,8 +38,8 @@ jobs:
             - name: Deploy to Google Cloud Functions
               working-directory: file-upload
               run: |
-                  gcloud functions deploy HelloWorld \
-                    --entry-point HelloWorld \
+                  gcloud functions deploy Upload \
+                    --entry-point FileUpload \
                     --runtime go123 \
                     --trigger-http \
                     --allow-unauthenticated
