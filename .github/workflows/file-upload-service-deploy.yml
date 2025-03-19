@@ -43,4 +43,5 @@ jobs:
                     --runtime go123 \
                     --trigger-http \
                     --allow-unauthenticated \
-                    --gen2
+                    --gen2 \
+                    --region=asia-northeast3
