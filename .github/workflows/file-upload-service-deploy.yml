@@ -42,4 +42,5 @@ jobs:
                     --entry-point FileUpload \
                     --runtime go123 \
                     --trigger-http \
-                    --allow-unauthenticated
+                    --allow-unauthenticated \
+                    --gen2
