@@ -40,6 +40,6 @@ jobs:
               run: |
                   gcloud functions deploy HelloWorld \
                     --entry-point HelloWorld \
-                    --runtime go120 \
+                    --runtime go123 \
                     --trigger-http \
                     --allow-unauthenticated
